@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DogApp</string>
+    <string name="titulo_nueva_cita">Nueva Cita</string>
+    <string name="hint_nombre_mascota">Nombre de la mascota</string>
+    <string name="hint_raza">Raza</string>
+    <string name="hint_propietario">Nombre del propietario</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="btn_guardar">Guardar Cita</string>
+    <string name="texto_sintomas">Síntomas</string>
+    <string name="regresar_content">Regresar</string>
 </resources>
