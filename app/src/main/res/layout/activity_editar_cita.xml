@@ -10,8 +10,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingStart="16dp"
-        android:paddingTop="24dp"
         android:paddingEnd="16dp"
+        android:paddingTop="24dp"
         android:paddingBottom="24dp">
 
         <!-- Título y encabezado -->
@@ -24,41 +24,41 @@
                 android:id="@+id/btnBack"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_centerVertical="true"
                 android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"
                 android:contentDescription="@string/regresar_content"
-                android:importantForAccessibility="yes"
-                android:src="@drawable/ic_back" />
+                android:importantForAccessibility="yes" />
 
             <TextView
                 android:id="@+id/tvTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:importantForAccessibility="yes"
-                android:text="@string/titulo_nueva_cita"
+                android:text="@string/titulo_editar_cita"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:importantForAccessibility="yes"/>
         </RelativeLayout>
 
         <!-- Campo: Nombre de la mascota -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:hint="@string/hint_nombre_mascota"
             app:boxBackgroundMode="outline"
-            app:boxStrokeColor="#9C27B0">
+            app:boxStrokeColor="#9C27B0"
+            android:layout_marginTop="24dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etNombreMascota"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="username"
                 android:background="@drawable/edittext_background"
+                android:textColorHint="#666666"
                 android:importantForAccessibility="yes"
-                android:textColorHint="#666666" />
+                android:autofillHints="username"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Campo: Raza -->
@@ -67,22 +67,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:autofillHints="text"
-            android:background="@drawable/edittext_background"
             android:hint="@string/hint_raza"
-            android:inputType="text"
+            android:background="@drawable/edittext_background"
             android:padding="12dp"
+            android:inputType="text"
             android:textColor="#000000"
-            android:textColorHint="#666666" />
+            android:textColorHint="#666666"
+            android:autofillHints="text" />
 
         <TextView
             android:id="@+id/tvEstadoRaza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:text="Seleccione una raza válida del autocompletado"
             android:textColor="@android:color/holo_red_dark"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
 
         <!-- Campo: Nombre del propietario -->
         <EditText
@@ -90,13 +90,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:autofillHints="name"
-            android:background="@drawable/edittext_background"
             android:hint="@string/hint_propietario"
-            android:inputType="text"
+            android:background="@drawable/edittext_background"
             android:padding="12dp"
+            android:inputType="text"
             android:textColor="#000000"
-            android:textColorHint="#666666" />
+            android:textColorHint="#666666"
+            android:autofillHints="name" />
 
         <!-- Campo: Teléfono -->
         <EditText
@@ -104,47 +104,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:autofillHints="phone"
-            android:background="@drawable/edittext_background"
             android:hint="@string/hint_telefono"
-            android:inputType="phone"
+            android:background="@drawable/edittext_background"
             android:padding="12dp"
+            android:inputType="phone"
             android:textColor="#000000"
-            android:textColorHint="#666666" />
-
-        <!-- Spinner de Síntomas -->
-        <TextView
-            android:id="@+id/tvSintomas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:importantForAccessibility="yes"
-            android:labelFor="@id/spinnerSintomas"
-            android:text="@string/texto_sintomas"
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-        <Spinner
-            android:id="@+id/spinnerSintomas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:minHeight="48dp"
-            android:paddingVertical="12dp" />
+            android:textColorHint="#666666"
+            android:autofillHints="phone" />
 
         <!-- Botón Guardar Cita -->
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="32dp"
-            android:backgroundTint="#EF5350"
-            android:drawableStart="@drawable/ic_save"
-            android:drawablePadding="8dp"
-            android:enabled="false"
-            android:paddingHorizontal="64dp"
             android:text="@string/btn_guardar"
-            android:textColor="#FFFFFF" />
+            android:drawableStart="@drawable/ic_save"
+            android:backgroundTint="#EF5350"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="64dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:enabled="false"/>
     </LinearLayout>
 </ScrollView>

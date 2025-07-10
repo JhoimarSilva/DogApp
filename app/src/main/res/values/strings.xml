@@ -8,4 +8,5 @@
     <string name="btn_guardar">Guardar Cita</string>
     <string name="texto_sintomas">Síntomas</string>
     <string name="regresar_content">Regresar</string>
+    <string name="titulo_editar_cita">Editar Cita</string>
 </resources>
